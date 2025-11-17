@@ -1,0 +1,65 @@
+.metrike-fix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.metrike-fix iframe {
+  border: none !important;
+}
+
+@media (max-width: 815px) {
+  .metrike-fix {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .metrike-fix iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .i-970150:has(iframe) {
+    padding-top: 15.46%;
+    /* Proporção para 970x150 */
+  }
+
+  .i-970250:has(iframe) {
+    padding-top: 25.77%;
+    /* Proporção para 970x250 */
+  }
+
+  .i-72890:has(iframe) {
+    padding-top: 12.36%;
+    /* Proporção para 728x90 */
+  }
+
+  .i-300250:has(iframe) {
+    padding-top: 250px;
+  }
+
+  .i-300600:has(iframe) {
+    padding-top: 600px;
+  }
+}
+
+.i-300600 iframe {
+  width: 319px !important;
+  height: 618px !important;
+}
+
+.i-300250 iframe {
+  width: 319px !important;
+  height: 268px !important;
+}
+
+:is(.i-300600, .i-300250, .i-970150, .i-970250, .i-72890):has(.adb-placeholder-blank) {
+  display: none;
+}
