@@ -11,7 +11,7 @@
 
 @media (max-width: 815px) {
   .metrike-fix {
-    width: 100% !important;
+    width: 95vw !important;
     max-width: 100% !important;
     position: relative;
     overflow: hidden;
