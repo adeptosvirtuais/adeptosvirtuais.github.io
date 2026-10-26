@@ -16,6 +16,9 @@
     position: relative;
     overflow: hidden;
   }
+  .metrike-fix ins {
+    width: 100% !important;
+  }  
 
   .metrike-fix iframe {
     position: absolute;
